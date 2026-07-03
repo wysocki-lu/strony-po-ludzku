@@ -31,7 +31,7 @@ Wynik na typowej stronie z generatora: 24 błędy i 12 uwag. Wynik na stronie sk
 git clone https://github.com/wysocki-lu/strony-po-ludzku ~/.claude/skills/strony-po-ludzku
 ```
 
-Skill aktywuje się przy audycie i poprawkach stron. Wywołanie ręczne: `/strony-po-ludzku`.
+Skill aktywuje się przy audycie i poprawkach stron. Wywołanie ręczne: `/strony-po-ludzku`. Jako zwykły markdown działa też z innymi narzędziami (Codex, Cursor, Windsurf).
 
 ## Struktura
 
@@ -43,6 +43,10 @@ Skill aktywuje się przy audycie i poprawkach stron. Wywołanie ręczne: `/stron
 - `references/detale-techniczne.md`: meta, alty, RODO, stopka z NIP, 404
 - `references/przyklady.md`: before/after
 - `skrypty/audyt.mjs`: automat
+
+## English summary
+
+A Claude skill for the final audit of AI-built websites, so they read and look human-made. Six layers: layout (breaking the template blocks every generator repeats), visual style (no purple gradients, no transparency, max 2px border radius, large centered icons, no box-in-a-box nesting), content credibility (invented social proof is treated as a legal risk, not a style issue), Polish web typography (non-breaking spaces after single-letter conjunctions are REQUIRED on the web, the opposite of plain text), technical details and a zero-dependency HTML checker. Calibration test: 24 errors on a typical generated landing page, 2 on a hand-crafted site.
 
 ## Licencja
 
