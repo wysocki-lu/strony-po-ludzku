@@ -20,7 +20,7 @@ Szczegóły i korekty: [references/layout.md](references/layout.md)
 
 ## 2. Styl: usuń wizualne AI-tells
 
-Fioletowe gradienty, rozmyte plamy w tle, glassmorphism, zaokrąglenia na wszystkim, kolorowa krawędź z lewej strony boxów, cień pod każdą kartą, gradientowy tekst w nagłówkach, fonty Inter/Poppins z domysłu, emoji jako ikony.
+Fundament: pierwszy poziom treści leży na normalnym tle strony, komórki (boxy) tylko dla wyróżnień i przycisków, zakaz komórki w komórce. Strona wyraźna: bez transparentnych teł i przezroczystych linii obramowania, kolory wprost z palety, czcionki kontrastowe (biała/czarna). Zaokrąglenia maksymalnie 2 px albo wcale. Ikony duże i wyśrodkowane względem podpisu, nigdy małe dopchnięte do prawej. Do tego: fioletowe gradienty, glassmorphism, kolorowa lewa krawędź, cienie na wszystkim, fonty Inter/Poppins z domysłu, emoji jako ikony.
 
 Szczegóły i korekty: [references/styl.md](references/styl.md)
 
@@ -54,18 +54,18 @@ Statyczny skan HTML: placeholdery, resztki angielskiego, fioletowe gradienty, em
 
 Przed oddaniem strony sprawdź:
 
-1. Czy układ sekcji dało się przewidzieć przed otwarciem strony? Jeśli tak, przebuduj przynajmniej hero i kolejność sekcji pod realną firmę.
-2. Jest gdzieś fioletowy/neonowy gradient, plama blur w tle albo glassmorphism bez uzasadnienia brandem? Usuń.
-3. Zaokrąglenia i cienie: jeden spójny, mały promień w całym serwisie; cień subtelny albo wcale. Kolorowa krawędź z lewej strony boxa: usuń.
-4. Emoji w nagłówkach albo jako ikony ficzerów? Usuń albo zamień na spójny zestaw ikon.
-5. Każda liczba na stronie (klienci, lata, projekty, %) jest prawdziwa i pochodzi od właściciela firmy? Jeśli nie, usuń. Wymyślony social proof to pole minowe.
-6. Zero placeholderów: lorem ipsum, example@, 123 456 789, "Twoja Firma", linki do "#".
-7. Zero resztek angielskiego: Home, About, Get Started, Learn more, All rights reserved.
-8. Teksty przeszły pisz-po-ludzku (frazy, frazesy, rejestr, em-dash)?
-9. Jeden H1, hierarchia H1 > H2 > H3, bez eyebrow microcaps, bez Title Case.
-10. Twarde spacje po jednoliterowych spójnikach w tekstach ciągłych.
-11. Favicon, title, meta description, og:image, opisowe alty, polska 404.
-12. Formularz: zgoda RODO + administrator danych; stopka: nazwa firmy, NIP, adres; polityka prywatności istnieje i nie jest szablonem lorem.
+1. Czy układ sekcji dało się przewidzieć przed otwarciem strony? Jeśli tak, przebuduj przynajmniej hero i kolejność sekcji pod realną firmę; przynajmniej jedna sekcja w niestandardowej formie.
+2. Pierwszy poziom treści leży na normalnym tle? Komórki tylko dla wyróżnień i przycisków? Żadnej komórki w komórce (box z tekstem, a w nim box z przyciskiem)?
+3. Zero transparentnych teł i przezroczystych linii obramowania; kolory wprost z palety, czcionki kontrastowe, bez wyróżniania "tłem rozjaśnionym".
+4. Zaokrąglenia maksymalnie 2 px albo wcale, konsekwentnie; kolorowa krawędź z lewej strony boxa: usunięta; cień subtelny albo żaden.
+5. Ikony: duże, wyśrodkowane względem podpisu. Żadnych małych ikonek dopchniętych do prawej w boxach informacyjnych. Emoji w nagłówkach i jako ikony: usunięte.
+6. Jest gdzieś fioletowy/neonowy gradient, plama blur w tle albo glassmorphism bez uzasadnienia brandem? Usuń. Font to nie Inter/Poppins z domysłu?
+7. Jeden H1, bezdyskusyjnie największy i wydzielony (np. podkreśleniem); hierarchia H1 > H2 > H3; żadnych mniejszych tekstów nad nagłówkami; bez Title Case.
+8. Każda liczba na stronie (klienci, lata, projekty, %) jest prawdziwa i pochodzi od właściciela firmy? Jeśli nie, usuń.
+9. Zero placeholderów (lorem, example@, 123 456 789, "Twoja Firma", linki do "#") i zero resztek angielskiego (Home, Get Started, All rights reserved).
+10. Teksty przeszły pisz-po-ludzku (frazy, frazesy, rejestr, em-dash)?
+11. Twarde spacje po jednoliterowych spójnikach w tekstach ciągłych.
+12. Favicon, title, meta description, og:image, opisowe alty, polska 404, formularz przetestowany; stopka z prawdziwymi danymi kontaktowymi.
 
 ## Materiał uzupełniający
 

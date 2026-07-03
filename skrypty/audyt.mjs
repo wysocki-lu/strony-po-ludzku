@@ -119,8 +119,19 @@ function audyt(html, nazwa) {
   }
   const gradienty = policz(dol, 'linear-gradient') + policz(dol, 'bg-gradient');
   if (gradienty >= 3) uwagi.push(`gradienty: ${gradienty}x (typowy nadmiar generatora)`);
-  const rounded = (dol.match(/rounded-(2xl|3xl|full)/g) ?? []).length;
-  if (rounded >= 6) uwagi.push(`duże zaokrąglenia rounded-2xl/3xl/full: ${rounded}x`);
+  const rounded = (dol.match(/rounded-(md|lg|xl|2xl|3xl|full)/g) ?? []).length;
+  const radiusy = [...dol.matchAll(/border-radius\s*:\s*(\d+(?:\.\d+)?)(px|rem|em)/g)]
+    .filter((m) => (m[2] === 'px' ? Number(m[1]) > 2 : Number(m[1]) > 0.125)).length;
+  if (rounded + radiusy > 0) {
+    uwagi.push(`zaokrąglenia powyżej 2 px: ${rounded + radiusy}x (reguła: max 2 px albo wcale)`);
+  }
+  const transparencje =
+    (dol.match(/rgba\([^)]+,\s*0?\.\d+\s*\)/g) ?? []).length +
+    (dol.match(/\b(bg|border|text)-[a-z]+-?\d*\/\d{1,2}\b/g) ?? []).length +
+    (dol.match(/opacity\s*:\s*0?\.\d+/g) ?? []).length;
+  if (transparencje > 0) {
+    uwagi.push(`transparentne tła/linie/teksty: ${transparencje}x (strona ma być wyraźna, bez przezroczystości)`);
+  }
   const borderLeft = (dol.match(/border-left\s*:\s*[2-9]px\s+solid|border-l-[2-9]/g) ?? []).length;
   if (borderLeft) uwagi.push(`kolorowa lewa krawędź boxów: ${borderLeft}x (AI-tell, spłaszcz)`);
   const aos = (dol.match(/data-aos=/g) ?? []).length;

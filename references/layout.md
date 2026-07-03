@@ -22,6 +22,18 @@ Generator składa każdą stronę z tych samych klocków w tej samej kolejności
 - **Pricing**: jeśli firma nie sprzedaje pakietów, nie potrzebuje sekcji pricing. Usługi wyceniane indywidualnie opisz procesem wyceny zamiast trzema kartami.
 - **Stopka**: linki tylko do stron, które istnieją. Polska stopka firmowa: dane firmy z NIP (patrz [detale-techniczne.md](detale-techniczne.md)).
 
+## Różnorodność form przekazu
+
+Generator proponuje w kółko te same formy: karty, karty i karty. Przy przebudowie testuj formy niestandardowe i dobieraj je do treści, nie do przyzwyczajenia:
+
+- porównanie "przed / po" albo "my / typowa oferta" zamiast kolejnej siatki zalet
+- oś czasu albo ponumerowane etapy dla procesu współpracy
+- tabela z konkretnymi parametrami tam, gdzie klient porównuje warianty
+- jedno duże zdjęcie z rzeczowym podpisem zamiast kolażu trzech ilustracji
+- sekcja liczona od problemu klienta ("Ile kosztuje przestój klimatyzacji?") zamiast opisu usługi
+
+Zasada: przynajmniej jedna sekcja na stronie łamie schemat, którego oko spodziewa się po tysiącach podobnych stron. To nie fanaberia, tylko zapamiętywalność.
+
 ## Test końcowy układu
 
 Zasłoń logo i nazwę firmy. Czy po samym układzie i treści sekcji dałoby się poznać, czym ta firma się zajmuje i czym różni od konkurencji? Jeśli strona przechodzi ten test, układ jest po ludzku.

@@ -15,6 +15,8 @@ Wiszący spójnik ("sierota") na końcu linii to znak, że tekst wkleił automat
 
 - **Jeden H1 na podstronę** i jest nim główny komunikat strony, nie logo ani nazwa firmy.
 - Hierarchia wizualna: H1 > H2 > H3 > tekst, między poziomami minimum 3-4 px różnicy plus zmiana wagi. Skala odniesienia (desktop): H1 28-40 px, H2 20-24 px, H3 16-18 px, tekst 15-17 px.
+- **H1 jest zawsze bezdyskusyjnie największy i wizualnie wydzielony**, np. podkreśleniem, grubą linią pod spodem albo wyraźnym odstępem od reszty. Czytelnik ma widzieć w ułamku sekundy, co na tej stronie jest najważniejsze.
+- **Żadnych mniejszych tekstów NAD nagłówkiem.** Eyebrow, mikrolabelka, kicker, numer sekcji nad H1/H2: wycinamy. Jeśli sekcja potrzebuje dopisku, idzie POD nagłówek jako podtytuł w zwykłym tekście.
 - **Zakaz Title Case**: "Poznaj Naszą Wyjątkową Ofertę" to kalka z angielskiego. Po polsku nagłówek jak zdanie.
 - **Zakaz eyebrow microcaps**: małych UPPERCASE etykiet nad nagłówkami.
 - Nagłówki bez kropki na końcu; pytajnik tylko, gdy sekcja naprawdę odpowiada na pytanie użytkownika (nie o firmę samą).

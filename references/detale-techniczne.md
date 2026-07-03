@@ -16,23 +16,15 @@ Rzeczy, których generator nie robi, bo nie wie, że strona będzie należeć do
 - Nazwy plików mówiące (montaz-klimatyzacji-gdansk.webp), nie IMG_20260703.jpg ani hero-final-v2.png.
 - Formaty webp/avif, wymiary width/height w znacznikach (stabilność układu), lazy loading poniżej pierwszego ekranu.
 
-## Formularze i RODO
+## Formularze
 
-- **Checkbox zgody z treścią zgody i administratorem danych**: formularz kontaktowy bez informacji RODO na polskiej stronie firmowej to brak, który widzi każdy świadomy klient B2B.
 - Formularz wysyła na prawdziwy adres firmy i ktoś to odbiera; test wysyłki przed oddaniem obowiązkowy.
 - Komunikaty walidacji po polsku ("To pole jest wymagane", nie "This field is required").
-- **Polityka prywatności i informacja o cookies istnieją i dotyczą tej firmy** (nazwa, adres, cele przetwarzania), a nie są lorem-szablonem z generatora. Baner cookies zgodny z realnie używanymi skryptami: jeśli strona ma GA4 i Pixel, zgoda musi je realnie warunkować.
+- Przy formularzu zbierającym dane sprawdź z właścicielem strony kwestie zgód i polityki prywatności; generator zostawia tu zwykle lorem-szablon albo nic. To temat do potwierdzenia z firmą, nie do zgadywania.
 
-## Stopka: dowód istnienia firmy
+## Stopka
 
-Polska strona firmowa uwiarygadnia się stopką. Minimum:
-
-- pełna nazwa podmiotu (z formą prawną, jeśli spółka)
-- NIP, adres siedziby
-- telefon i e-mail, te same co w sekcji kontakt
-- link do polityki prywatności
-
-Stopka "© 2026 Firma. Wszelkie prawa zastrzeżone." i nic więcej to sygnatura strony z generatora.
+Generator zostawia stopkę-wydmuszkę: "© 2023 Twoja Firma. All rights reserved." i kolumny martwych linków. Podmień na prawdziwe dane kontaktowe firmy (te same co w sekcji kontakt) i linki wyłącznie do stron, które istnieją. Zakres danych rejestrowych w stopce ustal z właścicielem strony.
 
 ## Drobiazgi, które robią różnicę
 
